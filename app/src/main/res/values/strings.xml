@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FieldCam</string>
+    <string name="title_home">Home</string>
+    <string name="title_camera">Camera</string>
+    <string name="title_settings">Settings</string>
+    <string name="intro_message">Message</string>
+    <string name="permission_request">Request</string>
+    <string name="camera_error">Error</string>
+    <string name="stop">Stop</string>
+    <string name="record">Record</string>
+    <string name="description_info">Description</string>
+    <string name="useForVideoNameTag">useForVideoName</string>
+
+    <string-array name="attemptArray">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>

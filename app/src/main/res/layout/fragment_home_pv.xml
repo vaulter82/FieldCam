@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <AutoCompleteTextView
+        android:id="@+id/athleteAutoComplete"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:tag="@string/useForVideoNameTag" />
+
+    <EditText
+        android:id="@+id/heightEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/athleteAutoComplete"
+        app:layout_constraintTop_toBottomOf="@+id/athleteAutoComplete"
+        android:tag="@string/useForVideoNameTag" />
+
+    <Button
+        android:id="@+id/addOneInchButton"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text='+1"'
+        app:layout_constraintStart_toEndOf="@+id/heightEditText"
+        app:layout_constraintTop_toBottomOf="@+id/athleteAutoComplete" />
+
+    <Button
+        android:id="@+id/addThreeInchesButton"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text='+3"'
+        app:layout_constraintStart_toEndOf="@+id/addOneInchButton"
+        app:layout_constraintTop_toBottomOf="@+id/athleteAutoComplete" />
+
+    <Button
+        android:id="@+id/addSixInchesButton"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text='+6"'
+        app:layout_constraintStart_toEndOf="@+id/addThreeInchesButton"
+        app:layout_constraintTop_toBottomOf="@+id/athleteAutoComplete" />
+
+    <Spinner
+        android:id="@+id/attemptSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/heightEditText"
+        app:layout_constraintTop_toBottomOf="@+id/heightEditText"
+        android:tag="@string/useForVideoNameTag" />
+
+</android.support.constraint.ConstraintLayout>
